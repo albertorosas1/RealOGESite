@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" href="TheMakerSetup.css";
+</head>
+<body>
+
+
+<h1>Off Grid Eyes</h1>
+
+<h2>Team: The Maker</h2>
+
+<h3>CSCE 4915</h3>
+
+
+<form action ="/submission_page.php">
+
+<p id ="firstParagraph">Please enter your device ID
+<label for = "dID"> (3 numbers): </label>
+<input type ="text" id ="dID" dID="dID" required
+minlength="0" maxlength="3" size="20"></p>
+
+
+<br>
+
+<p id ="secondParagraph">Please enter the direction the device is facing
+<label for = "direction"> (ex: N,NE,SW, etc): </label>
+<input type ="text" id ="direction" direction="direction" required
+minlength="0" maxlength="2" size="20"></p>
+
+<br>
+
+<p id ="thirdParagraph">Please enter if the device is facing in/out of fenceline.
+<label for = "facing"> (ex: i, I, o, I): </label>
+<input type ="text" id ="facing" facing="facing" required
+minlength="0" maxlength="1" size="5"></p>
+
+<br>
+<br>
+  <input type="submit" value="Submit">
+  
+</form>
+
+<div class="container">
+        <h4 style="text-align:left;">Return to HomePage</h4>
+        <a href="TheMaker_website.htm">
+            <button class="button">Return</button>
+        </a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+background-color: Green;
+
+}
+
+
+h1 {
+	color: black;
+	font-size: 35px;
+	font-style: normal;
+	border: 3px solid GhostWhite;
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	background-color: #F8F8FF;
+	border-radius: 25px;
+	
+}
+
+h2 {
+	color: black;
+	font-size: 20px;
+	font-style: normal;
+	text-align: center;
+	position: relative;
+	
+}
+
+h3 {
+	color: black;
+	font-size: 15px;
+	font-style: normal;
+	text-align: center;
+	position: relative;
+	bottom: 14px;
+	
+}
+
+h4 {
+	font-size: 30px;
+	position: relative;
+	bottom: -40px;
+	
+}
+
+
+#thirdParagraph {
+
+	border: 2px solid black;
+	margin: auto;
+	padding: 1px;
+	color: black;
+	text-align: left;
+	line-height: 10pt;
+	background-color: GhostWhite;
+	width: fit-content;
+	position: relative;
+	left: -600px;
+	font-size: 20px;
+	
+}
+
+#fourthParagraph {
+
+	border: 2px solid black;
+	margin: auto;
+	padding: 1px;
+	color: black;
+	text-align: left;
+	line-height: 10pt;
+	background-color: GhostWhite;
+	width: fit-content;
+	position: relative;
+	left: -571px;
+	font-size: 20px;
+	
+}
+#fifthParagraph {
+
+	border: 2px solid black;
+	margin: auto;
+	padding: 1px;
+	color: black;
+	text-align: left;
+	line-height: 10pt;
+	background-color: GhostWhite;
+	width: fit-content;
+	position: relative;
+	left: -583px;
+	font-size: 20px;
+	
+}
+#sixthParagraph {
+
+	border: 2px solid black;
+	margin: auto;
+	padding: 1px;
+	color: black;
+	text-align: left;
+	line-height: 10pt;
+	background-color: GhostWhite;
+	width: fit-content;
+	position: relative;
+	left: -603px;
+	font-size: 20px;
+}
+#seventhParagraph {
+
+	border: 2px solid black;
+	margin: auto;
+	padding: 1px;
+	color: black;
+	text-align: left;
+	line-height: 10pt;
+	background-color: GhostWhite;
+	width: fit-content;
+	position: relative;
+	left: -598px;
+	font-size: 20px;
+}
+
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
