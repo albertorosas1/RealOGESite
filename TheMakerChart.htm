@@ -115,6 +115,7 @@
             for (var j = 0; j < objCells.length; j++) {
                 if( j == 2 ){
 		var rowVid = my.tab.rows.item(i).cells;
+	if (rowVid) {
 	<py-script>
 import numpy as np
 import imutils 
@@ -243,5 +244,6 @@ else {
 	my.tab.rows.item(6).cells = setence;
         }
     }
+	}
 </script>	
 </html>
