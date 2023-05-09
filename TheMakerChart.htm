@@ -86,6 +86,7 @@
 	  <td>500 lux</td>
 	  <td>0%</td>
 	</tr>
+	
 </table>
 
 
@@ -118,15 +119,15 @@
 import numpy as np
 import imutils 
 import cv2
-		var image1 = save_frame_sec(rowVid, 0, /images); 
-		var image2 = save_frame_sec(rowVid, 1, /images); 
-		var image3 = save_frame_sec(rowVid, 3, /images); 
+		var image1 = save_frame_sec(rowVid, 0, /pics); 
+		var image2 = save_frame_sec(rowVid, 1, /pics); 
+		var image3 = save_frame_sec(rowVid, 3, /pics); 
 	</py-script>
 		}//when we are in the video column, save our 3 images using the save_frame_sec function
 	<py-script>
-	var imagePath = '/images';
+	var imagePath = '/pics';
 	var distance;
-	for imagePath in sorted(paths.list_images(/images)):
+	for imagePath in sorted(paths.list_images(/pics)):
 		var marker = find_marker(list_images); //declare our marker from the first image
 		var WIDTH = 3;
 		var DISTANCE = 0;
@@ -236,6 +237,9 @@ import cv2
 	    }	//last intrusion statement
 		}//if statment of facing out
 		} //where we check if objCells exists and run this loop
+else {
+	var setence = 'There is no video to determine intrusion/extrusion.'
+}
 	my.tab.rows.item(6).cells = setence;
         }
     }
