@@ -1,7 +1,7 @@
 import cv2
 import os
 
-def save_frame_sec(video_path, sec, result_path):
+def save_frame_sec(video_path, sec, result_path, imgName):
     cap = cv2.VideoCapture(video_path)
     
     if not cap.isOpened():
