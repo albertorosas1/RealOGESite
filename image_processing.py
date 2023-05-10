@@ -15,6 +15,12 @@ def find_marker(image):
 	cnts = cv2.findContours(edged.copy(), cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 	cnts = imutils.grab_contours(cnts)
 	c = max(cnts, key = cv2.contourArea)
+	image1 = cv2.imread(/images/videoname1 + '1')
+image2 = cv2.imread(/images/videoname1 + '2')
+image3 = cv2.imread(/images/videoname1 + '3')
+image4 = cv2.imread(/images/videoname2 + '1')
+image5 = cv2.imread(/images/videoname2 + '2')
+image6 = cv2.imread(/images/videoname2 + '3')
 	
 	# compute the bounding box of the of the paper region and return it
 	return cv2.minAreaRect(c)
@@ -24,17 +30,22 @@ def distance_to_camera(knownWidth, focalLength, perWidth):
 	return (knownWidth * focalLength) / perWidth
 
 
+videoname1 = intruding.mp4
+videoname2 = extruding.mp4
 
 
-image = cv2.imread("images/2ft.png")
+
 marker = find_marker(image)
 focalLength = (marker[1][0] * KNOWN_DISTANCE) / KNOWN_WIDTH
 
 # loop over the images
-for imagePath in sorted(paths.list_images("images")):
+for imagePath in sorted(paths.list_images(/images)):
 	# load the image, find the marker in the image, then compute the
 	# distance to the marker from the camera
-	image = cv2.imread(imagePath)
-	marker = find_marker(image)
+	image 1= cv2.imread(imagePath)
+	marker = find_marker('image' + str(n))
 	inches = distance_to_camera(KNOWN_WIDTH, focalLength, marker[1][0])
+	n+=1
+	if n>6
+	break
 	
