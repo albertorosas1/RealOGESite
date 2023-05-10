@@ -104,12 +104,12 @@
 <script>
     function determineExtr_Intr() {
         document.getElementById('info').innerHTML = "";
-        var myTab = document.getElementById('empTable');
+        <var> myTab = document.getElementById('empTable');
 
         // loop through all our rows
         for (i = 1; i < myTab.rows.length; i++) {
             // determine if the cells exists
-            var objCells = myTab.rows.item(i).cells;
+           <var> objCells = myTab.rows.item(i).cells;
 		if (objCells) {
            // reading values of the current row we are in
             for (var j = 0; j < objCells.length; j++) {
@@ -120,26 +120,26 @@
 import numpy as np
 import imutils 
 import cv2
-		var image1 = save_frame_sec(rowVid, 0, /pics); 
-		var image2 = save_frame_sec(rowVid, 1, /pics); 
-		var image3 = save_frame_sec(rowVid, 3, /pics); 
+		<var>  image1 = save_frame_sec(rowVid, 0, /pics, mytab.rows.item(i).cells + '1'); 
+		<var>  image2 = save_frame_sec(rowVid, 1, /pics, mytab.rows.item(i).cells + '2');
+		<var>  image3 = save_frame_sec(rowVid, 3, /pics, mytab.rows.item(i).cells + '3');
 	</py-script>
 		}//when we are in the video column, save our 3 images using the save_frame_sec function
 	<py-script>
 	var imagePath = '/pics';
-	var distance;
+	<var>  distance;
 	for imagePath in sorted(paths.list_images(/pics)):
-		var marker = find_marker(list_images); //declare our marker from the first image
-		var WIDTH = 3;
-		var DISTANCE = 0;
-		var focusLength = (marker[1][0] * DISTANCE) / WIDTH;
-		var lastDistance = distance;
+		<var> marker = find_marker(list_images); //declare our marker from the first image
+		<var>  WIDTH = 3;
+		<var> DISTANCE = 0;
+		<var>  focusLength = (marker[1][0] * DISTANCE) / WIDTH;
+		<var>  lastDistance = distance;
 		distance = def_distance_to_camera(WIDTH, focusLength, marker[1][0]);
 		    if (distance < lastDistance) {
-			    var boolIn = true;
+			 <var>  boolIn = true;
 		    }
 		else if (distance > lastDistance) {
-		var boolEx = true;	
+		<var>  boolEx = true;	
 		}
 		
 	
@@ -148,98 +148,101 @@ import cv2
             }
             if ( (my.tab.rows.item(5).cells == 'In') || (my.tab.rows.item(5).cells == 'in') {
 		if ( (my.tab.rows.item(4).cells = 'N') && (boolIn) ) {
-	    var setence = 'The extrusion is heading south.'
+	 <var> setence = 'The extrusion is heading south.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'NE') && (boolIn) ) {
-	    var setence = 'The extrusion is heading south west.'
+	 <var>  setence = 'The extrusion is heading south west.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'E') && (boolIn) ) {
-	    var setence = 'The extrusion is heading west.'
+	   <var>  setence = 'The extrusion is heading west.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'SE') && (boolIn) ) {
-	    var setence = 'The extrusion is heading north west.'
+	 <var>  setence = 'The extrusion is heading north west.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'S') && (boolIn) ) {
-	    var setence = 'The extrusion is heading north.'
+	   <var>  setence = 'The extrusion is heading north.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'SW') && (boolIn) ) {
-	    var setence = 'The extrusion is heading north east.'
+	  <var> setence = 'The extrusion is heading north east.'
 	    }
 		if ( (my.tab.rows.item(4).cells = 'W') && (boolIn) ) {
-	    var setence = 'The extrusion is heading east.'
+	 <var> setence = 'The extrusion is heading east.'
 	    }	//last intrusion statement
 			if ( (my.tab.rows.item(4).cells = 'N') && (boolEx) ) {
-	    var setence = 'The intrusion is heading north.'
+	  <var>  setence = 'The intrusion is heading north.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'NE') && (boolEx) ) {
-	    var setence = 'The intrusion is heading north east.'
+	   <var>  setence = 'The intrusion is heading north east.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'E') && (boolEx) ) {
-	    var setence = 'The intrusion is heading east.'
+	   <var>  setence = 'The intrusion is heading east.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'SE') && (boolEx) ) {
-	    var setence = 'The intrusion is heading south east.'
+	   <var>  setence = 'The intrusion is heading south east.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'S') && (boolEx) ) {
-	    var setence = 'The intrusion is heading south.'
+	   <var>  setence = 'The intrusion is heading south.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'SW') && (boolEx) ) {
-	    var setence = 'The intrusion is heading south west.'
+	 <var>  setence = 'The intrusion is heading south west.'
 	    }
 		if ( (my.tab.rows.item(4).cells = 'W') && (boolEx) ) {
-	    var setence = 'The intrusion is heading west.'
+	   <var>  setence = 'The intrusion is heading west.'
 	    }	
 		}//if statment of facing in
 	    else if ( (my.tab.rows.item(5).cells == 'Out') || (my.tab.rows.item(5).cells == 'out') {
 		     
 		
 			if ( (my.tab.rows.item(4).cells = 'N') && (boolEx) ) {
-	    var setence = 'The extrusion is heading north.'
+	  <var>  setence = 'The extrusion is heading north.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'NE') && (boolEx) ) {
-	    var setence = 'The extrusion is heading north east.'
+	  <var> setence = 'The extrusion is heading north east.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'E') && (boolEx) ) {
-	    var setence = 'The extrusion is heading east.'
+	  <var>  setence = 'The extrusion is heading east.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'SE') && (boolEx) ) {
-	    var setence = 'The extrusion is heading south east.'
+	  <var>  setence = 'The extrusion is heading south east.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'S') && (boolEx) ) {
-	    var setence = 'The extrusion is heading south.'
+	   <var>  setence = 'The extrusion is heading south.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'SW') && (boolEx) ) {
-	    var setence = 'The extrusion is heading south west.'
+	  <var>  setence = 'The extrusion is heading south west.'
 	    }
 		if ( (my.tab.rows.item(4).cells = 'W') && (boolEx) ) {
-	    var setence = 'The extrusion is heading west.'
+	   <var>  setence = 'The extrusion is heading west.'
 	    }	//last extrusion statement
 		
 		if ( (my.tab.rows.item(4).cells = 'N') && (boolIn) ) {
-	    var setence = 'The intrusion is heading south.'
+	 <var>  setence = 'The intrusion is heading south.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'NE') && (boolIn) ) {
-	    var setence = 'The intrusion is heading south west.'
+	<var>  setence = 'The intrusion is heading south west.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'E') && (boolIn) ) {
-	    var setence = 'The intrusion is heading west.'
+	   <var>  setence = 'The intrusion is heading west.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'SE') && (boolIn) ) {
-	    var setence = 'The intrusion is heading north west.'
+	  <var>  setence = 'The intrusion is heading north west.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'S') && (boolIn) ) {
-	    var setence = 'The intrusion is heading north.'
+	  <var>  setence = 'The intrusion is heading north.'
 	    }
 			if ( (my.tab.rows.item(4).cells = 'SW') && (boolIn) ) {
-	    var setence = 'The intrusion is heading north east.'
+	  <var>  setence = 'The intrusion is heading north east.'
 	    }
 		if ( (my.tab.rows.item(4).cells = 'W') && (boolIn) ) {
-	    var setence = 'The intrusion is heading east.'
+	   <var> setence = 'The intrusion is heading east.'
 	    }	//last intrusion statement
 		}//if statment of facing out
+		else {
+		<var> setence = 'Unable to determine intrusion/extrusion direction.'
+		}
 		} //where we check if objCells exists and run this loop
 else {
-	var setence = 'There is no video to determine intrusion/extrusion.'
+	<var>  setence = 'There is no video to determine intrusion/extrusion.'
 }
 	my.tab.rows.item(6).cells = setence;
         }
